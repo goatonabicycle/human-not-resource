@@ -1,51 +1,59 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>👋🧑 Hello, Human!</h1>
-			<p>
-				This is a silly little website that exists with a singluar idea in mind. It's nothing groundbreak or special but it's important nonetheless. 
-				We exist in a complex world full of interesting times, big ideas, and complicated humans. 
-			</p>
-			<p>				
-				Many of these humans are friends, family, or colleagues. Some of these humans are stranges, but all of these strangers are humans.
-			</p>
-			
-			<p>Very simply: <i><b>Humans are not resouces</b></i></p>
+  <head>
+    <BaseHead
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>👋🧑 Hello, Human!</h1>
+      <p>
+        We exist in a complex world full of interesting times, big ideas, and
+        complicated humans.
+      </p>
 
+      <p>
+        Many of these humans are friends, family, or colleagues. Some of these
+        humans are strangers, but all of these strangers are humans.
+      </p>
 
+      <p>
+        This website is none of those things. It exists with a singular idea in
+        mind. It's nothing groundbreaking or special but it's important
+        nonetheless.
+      </p>
 
-			<p>
-				Examples of resources as generallly understood:: 
-				<ul>
-					<li>Oil</li>
-					<li>Water</li>
-					<li>Food</li>
-					<li>Electricity</li>
-					<li>Gas</li>					
-				</ul>
-			</p>
+      <p>Very simply: <i><b>Humans are not resources</b></i></p>
 
-			<p>
-				Examples of humans: 
-				<ul>
-					<li>You</li>
-					<li>Me</li>
-				</ul>
-			</p>
+      <p>
+        Examples of resources as generally understood::
+        <ul>
+          <li>Oil</li>
+          <li>Water</li>
+          <li>Food</li>
+          <li>Electricity</li>
+          <li>Gas</li>
+        </ul>
+      </p>
 
-		</main>
-		<Footer />
-	</body>
+      <p>
+        Examples of humans:
+        <ul>
+          <li>You</li>
+          <li>Me</li>
+        </ul>
+      </p>
+    </main>
+    <Footer />
+  </body>
 </html>
